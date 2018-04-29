@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Master Dental</title>
+    <link rel="shortcut icon" HREF="images/favicons/favicon-1.ico">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="page" id="page-container">
+      
+      <header class="header-container">
+        <a href="home.html">
+        <div class="header-logo-wrapper">
+          <div class="header-logo-pic">
+            <img src="images/Logo-mini.jpg">
+          </div>
+          <div class="header-logo-text">
+            <p>Master Dental</p>
+          </div>
+        </div>
+        </a>
+        <div class="nav-container">
+          <nav class="nav-wrapper">
+            <div class="nav-item"><a href="home.html">WELCOME</a></div>
+            <div class="nav-item"><a href="team.html">OUR TEAM</a></div>
+            <div class="nav-item"><a href="https://praktika.praktika.net.au/php/onlineBooking/praktika/searchAppointments.php?Apikey=2a0a6a87-1486-4d02-a9a4-14435a52fa8d">ONLINE BOOKING</a></div>
+            <div class="nav-item contact-item"><a href="contact.html">CONTACT US</a></div>
+          </nav>
+        </div>
+        <div class="sidebar-page">
+          <button class="sidebar-button" id="sidebarbutton" onclick="sidebar_open()">&#9776;</button>
+          <div class="sidebar-wrapper" id="sidebar">
+            <nav class="sidebar-nav">
+              <button class="sidebar-nav-item" onclick="sidebar_close()">&#10006;</button>
+              <div class="sidebar-nav-item"><a href="home.html">WELCOME</a></div>
+              <div class="sidebar-nav-item"><a href="team.html">OUR TEAM</a></div>
+              <div class="sidebar-nav-item"><a href="https://praktika.praktika.net.au/php/onlineBooking/praktika/searchAppointments.php?Apikey=2a0a6a87-1486-4d02-a9a4-14435a52fa8d">ONLINE BOOKING</a></div>
+              <div class="sidebar-nav-item contact-item"><a href="contact.html">CONTACT US</a></div>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <article class="article-container">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="images/back_big.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides fade">
+            <img src="images/back_big2.jpg" style="width:100%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!--<div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>-->
+        <section class="article-intro">
+          <p>We will make sure you are being looked after. We have the skill, know-how, tools and equipment to provide you with the best dental treatment.</p>
+        </section>
+        <div class="photo-grid-container">
+          <div class="photo-grid">
+            <div class="photo-grid-item bg1"><a href="#">OUR TEAM</a></div>
+            <div class="photo-grid-item bg2"><a href="#"></a></div>
+            <div class="photo-grid-item tempBlock"></div>
+            <div class="photo-grid-item tempBlock"></div>
+            <div class="photo-grid-item tempBlock"></div>
+          </div>
+        </div>
+      </article>
+
+      <footer class="footer-container">
+        <div class="footer-wrapper">
+          <div class="footer-link-wrapper">
+            <a href="https://www.facebook.com/masterdentalgroup" class="fa logo-fb">&#xf09a;</a>
+            <a href="https://www.linkedin.com/in/frank-huang-b1554976/" class="fa logo-in">&#xf0e1;</a>
+            <a href="#" class="fa logo-gplus">&#xf0d5;</a>
+          </div>
+          <div class="footer-text-wrapper">
+            <div class="footer-text-block">
+              <p style="font-weight: bold">Auburn</p>
+              <p>Shop P4, Auburn Central Shopping Centre 62 Queen St., Auburn NSW 2144</p>
+              <a href="tel:+61-2-96461000"><span class="fa">&#xf095;</span>(02)96461000</a>
+              <a href="fox:+61-2-96461001"><span class="fa">&#xf1ac;</span>(02)96461001</a>
+            </div>
+            <div class="footer-text-block">
+              <p style="font-weight: bold">Dee Why</p>
+              <p>Shop 2, 637 Pittwater Rd., Dee Why NSW 2099</p>
+              <a href="tel:+61-2-99826625"><span class="fa">&#xf095;</span>(02)99826625</a>
+              <a href="fox:+61-2-99825632"><span class="fa">&#xf1ac;</span>(02)99825632</a>
+            </div>
+          </div>
+          <div class="footer-contact-wrapper">
+
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <script>
+      showSlides(1);
+    </script>
+  </body>
+</html>

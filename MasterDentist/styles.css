@@ -1,0 +1,445 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+a:link,
+a:visited {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+.page {
+  position: relative;
+  left: 0;
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+}
+
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 0 10px 10px;
+  background-color: #ffffff;
+  z-index: 1000;
+}
+
+.header-logo-wrapper {
+  width: 150px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo-pic {
+  width: 55px;
+  height: 70px;
+}
+
+.header-logo-text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-container {
+  display: none;
+}
+
+.sidebar-page {
+  width:20%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sidebar-button {
+  width: 50%;
+  border: none;
+  background-color: #ffffff;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.sidebar-wrapper {
+/*  display: none;*/
+  position: fixed;
+  transition: 0.3s;
+  right: -150px;
+  width: 100px;
+  /*height: 800px;*/
+  background-color: #ffffff;
+}
+
+.sidebar-nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sidebar-nav-item {
+  border: none;
+  background-color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 15px;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.sidebar-nav-item > a:hover {
+  color: #696868;
+  text-decoration: none;
+}
+
+.contact-item {
+  border: 2px solid #000000;
+  color: #191919;
+}
+
+.article-container {
+  position: relative;
+  margin-top: 90px;
+  width: 100%;
+  min-height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.show-block {
+  background-image: url(images/back_big.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.slideshow-container {
+  /*max-width: 1000px;*/
+  width: 100%;
+  position: relative;
+  /*margin: auto;*/
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #bbb;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color:#717171;
+}
+
+/* The dots/bullets/indicators */
+.dot-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  cursor:pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.article-intro {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.article-intro > p {
+  width: 50%;
+  text-align: center;
+  word-break:  normal;
+  font-family: 'Raleway', sans-serif;
+  line-height: 150%;
+}
+
+.photo-grid-container {
+  margin-top: 5%;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo-grid-item {
+  /*border: 1px solid #ffffff;
+  background-color: #d3dfe2;*/
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  margin: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80% 80%;
+  /*opacity: 0.7;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg1{
+  background-image: url("images/group1-360.jpg");
+}
+.bg1::before{
+  content: '';
+  background: rgba(0,0,0,0.7);
+}
+.bg2{
+  background-image: url("images/Frank.jpg");
+}
+
+.tempBlock{
+  background-color: #d3dfe2;
+}
+
+.photo-grid-item > a{
+  opacity: 1;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+}
+
+.photo-grid-item > a:hover{
+  opacity: 0.7;
+}
+
+.footer-container {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-link-wrapper{
+  margin: 10px 0;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-link-wrapper:hover > .fa{
+  transition: all .2s ease-in-out;
+  color: #757c7e;
+}
+
+.footer-link-wrapper > .fa{
+  border-radius: 50%;
+  font-size: 24px;
+  margin: 10px;
+  color: #000000;
+}
+
+.footer-link-wrapper > .fa:hover{
+  transition: all .2s ease-in-out;
+  transform: scale(1.2);
+}
+.footer-link-wrapper > .logo-fb:hover{
+  color: #3B5998;
+}
+.footer-link-wrapper > .logo-gplus:hover{
+  color: #bb0000;
+}
+.footer-link-wrapper > .logo-in:hover{
+  color: #007bb5;
+}
+
+.footer-text-wrapper{
+  padding: 15px 20px;
+  background-color: #d3dfe2;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: 'Roboto Slab', serif;
+  color: black;
+}
+
+.footer-text-block{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 200%;
+  transition: all .2s ease-in-out;
+}
+
+.footer-text-block:hover {
+  color: #696868;
+}
+.footer-text-block > a{
+  transition: all .2s ease-in-out;
+}
+
+.footer-text-block:hover > a {
+  transition: all .2s ease-in-out;
+  color: #696868;
+}
+
+.footer-text-block > p {
+  text-align: center;
+}
+
+.footer-text-block > a:hover  {
+  color: black;
+  transition: all .2s ease-in-out;
+  transform: scale(1.2);
+}
+
+@media only screen and (min-width: 900px) {
+  /* 當螢幕寬度大於 700px 時的規則 */
+  p {
+    font-size: 1.4em;
+  }
+
+  .sidebar-page {
+    display: none;
+  }
+  
+  .nav-container {
+/*    background-color:bisque;*/
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .nav-wrapper {
+/*    background-color:yellowgreen;*/
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .nav-item {
+    font-weight: normal;
+    padding: 2px;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .nav-item > a:link,
+  .nav-item > a:visited {
+    color: #000000;
+    text-decoration: none;
+    /*font-weight: normal;*/
+  }
+  
+  .nav-item > a:hover {
+    color: #696868;
+    text-decoration: none;
+  }
+
+  .footer-text-block{
+    line-height: 300%;
+  }
+
+  .footer-text-block > a {
+    font-size: 1.4em;
+  } 
+
+}
